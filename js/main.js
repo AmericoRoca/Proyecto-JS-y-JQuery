@@ -55,7 +55,66 @@ $(document).ready(function(){
   `;
     
   $("#posts").append(post);
+  });
+
+  //Theme Selector
+  var theme = $('#theme');
+
+  $('#to-green').click(function(){
+    theme.attr("href", "css/green.css");
+  });
+
+  $('#to-red').click(function(){
+    theme.attr("href", "css/red.css");
+  });
+
+  $('#to-blue').click(function(){
+    theme.attr("href", "css/blue.css");
+  });
+
+  //Scroll
+  $('.subir').click(function(e){
+
+    e.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+
+    return false;
+  });
+
+  //False login
+
+  $("#login").submit(function(){
+    var username = $("#username").val();
+   
+
+    localStorage.setItem("username", username);
+   
 
   });
+
+  
+  var username = localStorage.getItem("username");
+
+
+  if (username != null || username != "undefined") {
+    var aboutp = $("#about p");
+
+    aboutp.html("<strong>Welcome, "+ username+ "</strong>");
+    aboutp.append("<a href='#' id='logout'>Logout</a>");
+
+    $("#login").hide();
+
+    $('#logout').click(function(){
+      localStorage.clear();
+      location.reload();
+    });
+  }
+
+  
+
+
 
 });
