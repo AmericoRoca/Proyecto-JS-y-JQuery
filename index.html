@@ -8,7 +8,7 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="../Proyecto-JS-y-JQuery/css/styles.css">
-
+	<link id="theme" rel="stylesheet" href="../Proyecto-JS-y-JQuery/css/green.css">
 	
 	<!--- Slider -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -20,6 +20,12 @@
 
 </head>
 <body>
+
+	<div id="select-theme">
+		<div id="to-green"></div>
+		<div id="to-red"></div>
+		<div id="to-blue"></div>
+	</div>
 	<section id="global">
 		<!-- header -->
 		<header>
@@ -53,47 +59,7 @@
 		<!-- content -->
 		<section id="content">
 			<div id="posts">
-				<article class="post">
-					<h2>Article title</h2>
-					<span class="date">Publish Date</span>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-						Natus tenetur deserunt nam reprehenderit? 
-						Ea iste suscipit, et iusto totam aliquid 
-						earum vitae dolorum officia magni quos? 
-						Illo aut natus delectus.
-					</p>
-					<a href="#" class="button-more">Read more</a>
-				</article>
-				<br>
-				<br>
-				<br>
-				<br>
-				<article class="post">
-					<h2>Article title</h2>
-					<span class="date">Publish Date</span>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-						Natus tenetur deserunt nam reprehenderit? 
-						Ea iste suscipit, et iusto totam aliquid 
-						earum vitae dolorum officia magni quos? 
-						Illo aut natus delectus.
-					</p>
-					<a href="#" class="button-more">Read more</a>
-				</article>
-				<br>
-				<br>
-				<br>
-				<br>
-				<article class="post">
-					<h2>Article title</h2>
-					<span class="date">Publish Date</span>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-						Natus tenetur deserunt nam reprehenderit? 
-						Ea iste suscipit, et iusto totam aliquid 
-						earum vitae dolorum officia magni quos? 
-						Illo aut natus delectus.
-					</p>
-					<a href="#" class="button-more">Read more</a>
-				</article>
+				<!-- upload  POST from JSON-->
 				
 			</div>
 			<aside id="sidebar">
@@ -109,15 +75,15 @@
 
 				<div id="login">
 					<h4><span>Login</span></h4>
-					<form action="">
+					<form >
 						<label for="username">Username</label>
-						<input type="text" name="username">
+						<input type="text" name="username" id="username">
 						<br>
 						<label for="email" >Email</label>
 						<br>
-						<input type="email" name="email">
+						<input type="email" name="email" id="email">
 						<label for="password">Password</label>
-						<input type="password" name="password">
+						<input type="password" name="password" id="password">
 						<br>
 						<input type="submit" value="Send">
 					</form>
@@ -132,6 +98,9 @@
 
 	<footer>
 		Develop by Americo Roca &copy; 2022
+
+		<a href="#" class="up">Up</a>
+
 	</footer>
 
 	
