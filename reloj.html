@@ -1,132 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Proyecto con JavaScript</title>
 
-	<!-- Styles -->
-	<link rel="stylesheet" href="../Proyecto-JS-y-JQuery/css/styles.css">
-	<link id="theme" rel="stylesheet" href="../Proyecto-JS-y-JQuery/css/green.css">
-	
-	<!-- JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Proyecto con JavaScript</title>
 
-	<link rel="stylesheet" href="js/jquery-ui-1.13.1/jquery-ui.css">
-	<link rel="stylesheet" href="js/jquery-ui-1.13.1/jquery-ui.structure.min.css">
-	<link rel="stylesheet" href="js/jquery-ui-1.13.1/jquery-ui.theme.css">
+		<!-- Estilos CSS -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
 
-	<script type="text/javascript" src="js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
-	
-	<!-- MisScripts-->
-	<script src="js/main.js"></script>
-
-</head>
-<body>
-
-	<div id="select-theme">
-		<div id="to-green"></div>
-		<div id="to-red"></div>
-		<div id="to-blue"></div>
-	</div>
-	<section id="global">
-		<!-- header -->
-		<header>
-			<div id="logo">
-				<h1>PROYECTO JS</h1>
-			</div>
-
-			<div class="clearfix"></div>
-			<nav id="menu">
-				<ul >
-					<li><a href="../Proyecto-JS-y-JQuery/index.html">Home</a></li>
-					<li><a href="../Proyecto-JS-y-JQuery/reloj.html">Clock</a></li>
-					<li><a href="../Proyecto-JS-y-JQuery/about.html">About me</a></li>
-					<li><a href="../Proyecto-JS-y-JQuery/contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		
-		<!-- content -->
-		<section id="content">
+		<!-- moment js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+		
+		<!-- Mis Scripts -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+		<body>
 
-			<div id="box">
-				<!-- upload  POST from JSON-->
-				<h2>About Me</h2>
-				<div id="acordeon">
-					
-					<h3>How we are?</h3>
-					<div>
-						<p>Lorem ipsum dolor, sit amet consectetur 
-							adipisicing elit. Doloribus totam, sint 
-							pariatur nostrum recusandae voluptates porro 
-							sit nam voluptas iste laboriosam saepe praesentium
-							 doloremque, laudantium 
-							vel quidem consequuntur et voluptatibus.</p>
-					</div>
-					<h3>Our Services</h3>
-					<div>
-						<p>Lorem ipsum dolor, sit amet consectetur 
-							adipisicing elit. Doloribus totam, sint 
-							pariatur nostrum recusandae voluptates porro 
-							sit nam voluptas iste laboriosam saepe praesentium
-							 doloremque, laudantium 
-							vel quidem consequuntur et voluptatibus.</p>
-					</div>
-					<h3>Our Customers</h3>
-					<div>
-						<p>Lorem ipsum dolor, sit amet consectetur 
-							adipisicing elit. Doloribus totam, sint 
-							pariatur nostrum recusandae voluptates porro 
-							sit nam voluptas iste laboriosam saepe praesentium
-							 doloremque, laudantium 
-							vel quidem consequuntur et voluptatibus.</p>
-					</div>
-
-				</div>
+			<div id="select-theme">
+				<div id="to-green"></div>
+				<div id="to-red"></div>
+				<div id="to-blue"></div>
 			</div>
-			<aside id="sidebar">
-				<div id="about">
-					<h4><span>How I am?</span></h4>
-					<img src="../Proyecto-JS-y-JQuery/img/caracol.jpg" alt="caracol">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-						Aspernatur, ab fuga. Officiis molestias necessitatibus dolore 
-						ipsam neque praesentium, provident esse ipsa, quos illum veniam 
-						similique 
-						distinctio quia minima? Inventore, suscipit.</p>
-				</div>
-
-				<div id="login">
-					<h4><span>Login</span></h4>
-					<form >
-						<label for="username">Username</label>
-						<input type="text" name="username" id="username">
-						<br>
-						<label for="email" >Email</label>
-						<br>
-						<input type="email" name="email" id="email">
-						<label for="password">Password</label>
-						<input type="password" name="password" id="password">
-						<br>
-						<input type="submit" value="Send">
-					</form>
-
-				</div>
-			</aside>
-
-			<div class="clearfix"></div>
-
-		</section>
-	</section>
-
-	<footer>
-		Develop by Americo Roca &copy; 2022
-
-		<a href="#" class="up">Up</a>
-
-	</footer>
-
-	
-</body>
-</html>
+			<section id="global">
+				<!-- header -->
+				<header>
+					<div id="logo">
+						<h1>PROYECTO JS</h1>
+					</div>
+		
+					<div class="clearfix"></div>
+					<nav id="menu">
+						<ul >
+							<li><a href="../Proyecto-JS-y-JQuery/index.html">Home</a></li>
+							<li><a href="../Proyecto-JS-y-JQuery/reloj.html">Clock</a></li>
+							<li><a href="../Proyecto-JS-y-JQuery/about.html">About me</a></li>
+							<li><a href="../Proyecto-JS-y-JQuery/contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+				
+				<!-- content -->
+				<section id="content">
+		
+					<div id="box">
+						<!-- upload  POST from JSON-->
+						<h2>About Me</h2>
+						<div id="acordeon">
+							
+							<div id="reloj"></div>
+						</div>
+					</div>
+					<aside id="sidebar">
+						<div id="about">
+							<h4><span>How I am?</span></h4>
+							<img src="../Proyecto-JS-y-JQuery/img/caracol.jpg" alt="caracol">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Aspernatur, ab fuga. Officiis molestias necessitatibus dolore 
+								ipsam neque praesentium, provident esse ipsa, quos illum veniam 
+								similique 
+								distinctio quia minima? Inventore, suscipit.</p>
+						</div>
+		
+						<div id="login">
+							<h4><span>Login</span></h4>
+							<form >
+								<label for="username">Username</label>
+								<input type="text" name="username" id="username">
+								<br>
+								<label for="email" >Email</label>
+								<br>
+								<input type="email" name="email" id="email">
+								<label for="password">Password</label>
+								<input type="password" name="password" id="password">
+								<br>
+								<input type="submit" value="Send">
+							</form>
+		
+						</div>
+					</aside>
+		
+					<div class="clearfix"></div>
+		
+				</section>
+			</section>
+		
+			<footer>
+				Develop by Americo Roca &copy; 2022
+		
+				<a href="#" class="up">Up</a>
+		
+			</footer>
+		
+			
+		</body>
+		</html>
