@@ -118,6 +118,30 @@ $(document).ready(function(){
       $("#acordeon").accordion();
     }
 
+    //clock
+    if (window.location.href.indexOf('reloj') > -1){
+
+      setInterval(function(){
+
+        var reloj = moment().format("h:mm:ss");
+        $('#reloj').html(reloj);
+
+      }, 1000)
+      
+    }
+
+    //Validation
+    if (window.location.href.indexOf('contact') > -1){
+
+      $("form input[name='date']").datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+
+      $.validate({
+        lang:'es'
+  
+      });
+    }
   
 
 
